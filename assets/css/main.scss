@@ -10,12 +10,78 @@ search: false
 
 /* --- 포스트 목록 제목 스타일 커스텀 --- */
 .archive__item-title a {
-    color: #2da0a0 !important;  /* 1. 색상 변경 (청록색) */
+    color: #178178 !important;  /* 1. 색상 변경 (청록색) */
     text-decoration: none !important; /* 2. 밑줄 제거 */
 }
 
 /* 마우스 올렸을 때(Hover) 스타일 */
 .archive__item-title a:hover {
-    color: #1d7d7d !important; /* 마우스 올리면 조금 더 진하게 */
+    color: #0D4A44 !important; /* 마우스 올리면 조금 더 진하게 */
     text-decoration: none !important; /* 마우스 올려도 밑줄 안 생기게 */
+}
+
+/* 파티클 배경 스타일 */
+#particles-js {
+  position: fixed; /* 스크롤해도 배경은 고정 */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /*background-color: #7e0990; 배경색: 어두운 회색 (원하는 색으로 변경 가능) */
+  //background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  //background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  //background: linear-gradient(to bottom, #000000, #0f9b0f); /* 0f9b0f 대신 어두운 청록 */
+  //background: linear-gradient(to bottom, #020024, #090979, #00d4ff); /* 너무 밝으면 아래 추천 */
+  background: linear-gradient(180deg, #020111 10%, #3a6073 100%);
+  //background: radial-gradient(circle at center, #3a3a3a, #000000);
+  z-index: -1; /* 다른 글자들보다 뒤에 배치 */
+}
+
+.page__footer {
+  background-color: transparent !important; /* 배경 투명 (파티클이 비쳐 보임) */
+  color: #ccc !important; /* 글씨는 밝은 회색 */
+  margin-top: 0 !important; /* 본문과의 간격 줄이기 */
+}
+
+.page__footer footer a {
+  color: #ffffff !important;
+}
+
+.masthead {
+  background-color: rgba(10, 25, 47, 0.8) !important; /* 반투명 다크 네이비 */
+  backdrop-filter: blur(10px); /* 유리 블러 효과 */
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: none !important;
+}
+
+.masthead__inner-wrap,
+.masthead__menu,
+.greedy-nav,           
+.greedy-nav button {   
+  background-color: transparent !important;
+}
+
+.masthead__inner-wrap .site-title,
+.masthead__inner-wrap .masthead__menu a,
+.masthead__inner-wrap .masthead__menu-item {
+  color: #E0E0E0 !important; 
+  font-weight: bold;
+}
+
+.author__name,
+.author__bio,
+.author__location {
+  color: #E0E0E0 !important; 
+}
+
+.author__urls,
+.author__urls a,
+.author__urls i {
+  color: #FFFFFF !important; 
+  transition: 0.3s;
+}
+
+.author__urls a:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 5px #5EE7DF; 
 }
