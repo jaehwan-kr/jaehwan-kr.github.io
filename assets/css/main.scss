@@ -37,51 +37,57 @@ search: false
   z-index: -1; /* 다른 글자들보다 뒤에 배치 */
 }
 
-.page__footer {
-  background-color: transparent !important; /* 배경 투명 (파티클이 비쳐 보임) */
-  color: #ccc !important; /* 글씨는 밝은 회색 */
-  margin-top: 0 !important; /* 본문과의 간격 줄이기 */
-}
-
-.page__footer footer a {
-  color: #ffffff !important;
-}
-
 .masthead {
-  background-color: rgba(10, 25, 47, 0.8) !important; /* 반투명 다크 네이비 */
-  backdrop-filter: blur(10px); /* 유리 블러 효과 */
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: none !important;
-}
+    background-color: rgb(10, 25, 47) !important; /* 반투명 다크 네이비 */
+    backdrop-filter: blur(10px); /* 유리 블러 효과 */
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: none !important;
+    }
 
 .masthead__inner-wrap,
 .masthead__menu,
 .greedy-nav,           
 .greedy-nav button {   
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 .masthead__inner-wrap .site-title,
 .masthead__inner-wrap .masthead__menu a,
 .masthead__inner-wrap .masthead__menu-item {
-  color: #E0E0E0 !important; 
-  font-weight: bold;
+    color: #E0E0E0 !important; 
+    font-weight: bold;
 }
 
-.author__name,
-.author__bio,
-.author__location {
-  color: #E0E0E0 !important; 
+.page__footer {
+    background-color: rgb(10, 25, 47) !important;
 }
 
-.author__urls,
-.author__urls a,
-.author__urls i {
-  color: #FFFFFF !important; 
-  transition: 0.3s;
-}
+.dark-theme {
+    .page__footer {
+    background-color: transparent !important; /* 배경 투명 (파티클이 비쳐 보임) */
+    color: #ccc !important; /* 글씨는 밝은 회색 */
+    margin-top: 0 !important; /* 본문과의 간격 줄이기 */
+    }
 
-.author__urls a:hover {
-  color: #ffffff !important;
-  text-shadow: 0 0 5px #5EE7DF; 
+    .page__footer footer a {
+    color: #ffffff !important;
+    }
+
+    .author__name,
+    .author__bio,
+    .author__location {
+    color: #E0E0E0 !important; 
+    }
+
+    .author__urls,
+    .author__urls a,
+    .author__urls i {
+    color: #FFFFFF !important; 
+    transition: 0.3s;
+    }
+
+    .author__urls a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px #5EE7DF; 
+    }
 }
