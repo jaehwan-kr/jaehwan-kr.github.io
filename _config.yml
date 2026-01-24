@@ -113,7 +113,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jaehwan Lee"
+  name             : "Lee Jaehwan"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "안녕하세요"
   location         : "Republic of Korea"
@@ -332,3 +332,8 @@ defaults:
       toc_label: 목차
 
 date_format: "%Y-%m-%d"
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/

@@ -7,3 +7,15 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* --- 포스트 목록 제목 스타일 커스텀 --- */
+.archive__item-title a {
+    color: #2da0a0 !important;  /* 1. 색상 변경 (청록색) */
+    text-decoration: none !important; /* 2. 밑줄 제거 */
+}
+
+/* 마우스 올렸을 때(Hover) 스타일 */
+.archive__item-title a:hover {
+    color: #1d7d7d !important; /* 마우스 올리면 조금 더 진하게 */
+    text-decoration: none !important; /* 마우스 올려도 밑줄 안 생기게 */
+}
